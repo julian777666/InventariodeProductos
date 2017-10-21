@@ -68,6 +68,7 @@ Partial Class MenuPrincipal
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(646, 261)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.IsMdiContainer = True
         Me.Name = "MenuPrincipal"
         Me.Text = "MenuPrincipal"
         Me.ToolStrip1.ResumeLayout(False)

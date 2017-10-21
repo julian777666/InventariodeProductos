@@ -22,7 +22,7 @@
 
         Producto.Nombre = TextBox2.Text
         Producto.Cantidad = TextBox3.Text
-        Producto.Precio = CInt(TextBox4.Text)
+        Producto.Precio = TextBox4.Text
         Producto.Descripcion = TextBox5.Text
 
         Select Case operacion_
@@ -44,6 +44,6 @@
     End Sub
 
     Private Sub CANCELAR_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CANCELAR.Click
-        Close()
+        Me.Close()
     End Sub
 End Class

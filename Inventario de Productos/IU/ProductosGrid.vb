@@ -29,7 +29,7 @@
 
 
     Private Sub ToolStripButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton4.Click
-        End
+        Me.Close()
     End Sub
 
     Private Sub llenarProductoForm()

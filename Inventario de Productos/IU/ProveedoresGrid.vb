@@ -13,19 +13,19 @@
     Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton2.Click
         ProveedorForm.operacion = "ELIMINAR"
         ProveedorForm.Text = "ELIMINAR PROVEEDOR"
-        'llenarProveedorForm()
+        llenarProveedorForm()
         ProveedorForm.Show()
     End Sub
 
 
     Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton3.Click
         ProveedorForm.operacion = "MODIFICAR"
-        'llenarProveedorForm()
+        llenarProveedorForm()
         ProveedorForm.Show()
     End Sub
 
     Private Sub ToolStripButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton4.Click
-        End
+        Me.Close()
     End Sub
     Private Sub llenarProveedorForm()
 

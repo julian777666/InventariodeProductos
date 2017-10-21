@@ -29,7 +29,7 @@ Public Class ProductosCollection
         Dim MiDataTable As New DataTable
         Dim Producto As ProductoClass
 
-        objBaseDatos.objTabla = "Producto"
+        objBaseDatos.objTabla = "Productos"
 
         MiDataTable = objBaseDatos.Consultar
 
@@ -51,7 +51,7 @@ Public Class ProductosCollection
     Public Sub InsertarProducto(ByVal Producto As ProductoClass)
 
         Dim objBaseDatos As New BaseDatosClass
-        objBaseDatos.objTabla = "Producto"
+        objBaseDatos.objTabla = "Productos"
 
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
@@ -82,14 +82,14 @@ Public Class ProductosCollection
     Public Sub EliminarProducto(ByVal Producto As ProductoClass)
 
         Dim objBaseDatos As New BaseDatosClass
-        objBaseDatos.objTabla = "Producto"
+        objBaseDatos.objTabla = "Productos"
 
         Dim resultado As Boolean
 
         resultado = objBaseDatos.Eliminar(Producto.idProducto)
 
         If Not resultado Then
-            MessageBox.Show("No fue posible eliminar el Producto " + Producto.idProducto)
+            MessageBox.Show("No fue posible eliminar el Productos " + Producto.idProducto)
             Exit Sub
         End If
 
@@ -101,7 +101,7 @@ Public Class ProductosCollection
     Public Sub ActualizarProducto(ByVal Producto As ProductoClass)
 
         Dim objBaseDatos As New BaseDatosClass
-        objBaseDatos.objTabla = "Producto"
+        objBaseDatos.objTabla = "Productos"
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
 
