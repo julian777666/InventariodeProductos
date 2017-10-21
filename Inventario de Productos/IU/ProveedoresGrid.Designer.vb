@@ -46,7 +46,7 @@ Partial Class ProveedoresGrid
         Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(48, 48)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4})
-        Me.ToolStrip1.Location = New System.Drawing.Point(66, 50)
+        Me.ToolStrip1.Location = New System.Drawing.Point(90, 54)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(423, 67)
         Me.ToolStrip1.TabIndex = 8
@@ -92,7 +92,7 @@ Partial Class ProveedoresGrid
         Me.DataGridView1.Location = New System.Drawing.Point(12, 142)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(545, 184)
+        Me.DataGridView1.Size = New System.Drawing.Size(578, 184)
         Me.DataGridView1.TabIndex = 9
         '
         'IdProveedoresDataGridViewTextBoxColumn
@@ -138,7 +138,7 @@ Partial Class ProveedoresGrid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(570, 355)
+        Me.ClientSize = New System.Drawing.Size(602, 355)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "ProveedoresGrid"

@@ -47,7 +47,7 @@ Public Class ProveedoresCollection
     Public Sub InsertarProveedor(ByVal Proveedor As ProveedorClass)
 
         Dim objBaseDatos As New BaseDatosClass
-        objBaseDatos.objTabla = "Proveedor"
+        objBaseDatos.objTabla = "Proveedores"
 
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
@@ -78,7 +78,7 @@ Public Class ProveedoresCollection
     Public Sub EliminarProveedor(ByVal Proveedor As ProveedorClass)
 
         Dim objBaseDatos As New BaseDatosClass
-        objBaseDatos.objTabla = "Proveedor"
+        objBaseDatos.objTabla = "Proveedores"
 
         Dim resultado As Boolean
 
@@ -99,7 +99,7 @@ Public Class ProveedoresCollection
     Public Sub ActualizarProveedor(ByVal Proveedor As ProveedorClass)
 
         Dim objBaseDatos As New BaseDatosClass
-        objBaseDatos.objTabla = "Proveedor"
+        objBaseDatos.objTabla = "Proveedores"
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
 
