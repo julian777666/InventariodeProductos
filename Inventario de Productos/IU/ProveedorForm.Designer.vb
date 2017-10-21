@@ -75,47 +75,47 @@ Partial Class ProveedorForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(81, 56)
+        Me.Label1.Location = New System.Drawing.Point(111, 56)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(16, 13)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Id"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(81, 95)
+        Me.Label2.Location = New System.Drawing.Point(98, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "Nombre"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(81, 136)
+        Me.Label3.Location = New System.Drawing.Point(93, 139)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.Size = New System.Drawing.Size(52, 13)
         Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Label3"
+        Me.Label3.Text = "Direccion"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(84, 176)
+        Me.Label4.Location = New System.Drawing.Point(93, 179)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
+        Me.Label4.Size = New System.Drawing.Size(49, 13)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Label4"
+        Me.Label4.Text = "Telefono"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(87, 219)
+        Me.Label5.Location = New System.Drawing.Point(96, 222)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.Size = New System.Drawing.Size(48, 13)
         Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Label5"
+        Me.Label5.Text = "Empresa"
         '
         'ACEPTAR
         '

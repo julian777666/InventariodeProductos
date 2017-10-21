@@ -40,6 +40,7 @@ Partial Class ProductoForm
         '
         Me.TextBox1.Location = New System.Drawing.Point(170, 67)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 0
         '
