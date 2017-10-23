@@ -9,7 +9,7 @@ GO
 IF OBJECT_ID('Productos') IS NULL
 
 CREATE TABLE [dbo].[Productos](
-	[idProducto] [int] NOT NULL,
+	[idProducto] [int]Identity ,
 	[Nombre] [nchar](50) NULL,
 	[Cantidad] [int] NULL,
 	[Precio] [money] NULL,
@@ -27,7 +27,7 @@ GO
 IF OBJECT_ID('Proveedores') IS NULL
 	
 CREATE TABLE [dbo].[Proveedores](
-	[idProveedores] [int] NOT NULL,
+	[idProveedores] [int]Identity ,
 	[Nombre] [nchar](50) NULL,
 	[Direccion] [nchar](50) NULL,
 	[Telefono] [int] NULL,
