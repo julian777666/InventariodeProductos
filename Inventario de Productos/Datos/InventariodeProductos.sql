@@ -6,10 +6,10 @@ GO
 
 SET QUOTED_IDENTIFIER ON
 GO
-IF OBJECT_ID('Productos') IS NULL
+IF OBJECT_ID('Productos') IS not NULL
 
 CREATE TABLE [dbo].[Productos](
-	[idProducto] [int]Identity ,
+	[idProducto] [int]Identity (1,1) ,
 	[Nombre] [nchar](50) NULL,
 	[Cantidad] [int] NULL,
 	[Precio] [money] NULL,
@@ -27,7 +27,7 @@ GO
 IF OBJECT_ID('Proveedores') IS NULL
 	
 CREATE TABLE [dbo].[Proveedores](
-	[idProveedores] [int]Identity ,
+	[idProveedores] [int]Identity(1,1) ,
 	[Nombre] [nchar](50) NULL,
 	[Direccion] [nchar](50) NULL,
 	[Telefono] [int] NULL,
