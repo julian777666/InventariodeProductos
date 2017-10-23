@@ -17,6 +17,16 @@ Public Class ProveedoresCollection
         End Get
 
     End Property
+    Protected Overrides Function FindCore(ByVal prop As PropertyDescriptor, ByVal key As Object) As Integer
+        For Each proveedor In Me
+            If prop.GetValue(proveedor).Equals(key) Then
+                Return Me.IndexOf(proveedor)
+            End If
+        Next
+
+        Return -1
+
+    End Function
 
     Public Function TraerProveedores() As ProveedoresCollection
 

@@ -18,6 +18,16 @@ Public Class ProductosCollection
         End Get
 
     End Property
+    Protected Overrides Function FindCore(ByVal prop As PropertyDescriptor, ByVal key As Object) As Integer
+        For Each producto In Me
+            If prop.GetValue(producto).Equals(key) Then
+                Return Me.IndexOf(producto)
+            End If
+        Next
+
+        Return -1
+
+    End Function
     Public Sub New()
 
         Me.TraerProcuctos()
