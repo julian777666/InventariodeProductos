@@ -52,7 +52,7 @@ Public Class ProveedoresCollection
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
 
-        vSQL.Append("(idProveedor")
+        vSQL.Append("(idProveedores")
         vSQL.Append(",NombreP")
         vSQL.Append(",Direccion")
         vSQL.Append(",Telefono")
@@ -67,7 +67,7 @@ Public Class ProveedoresCollection
         Proveedor.idProveedores = objBaseDatos.Insertar(vSQL.ToString)
 
         If Proveedor.idProveedores = 0 Then
-            MsgBox("No fue posible agregar el Proveedor " + Proveedor.idProveedores)
+            MsgBox("No fue posible agregar el Proveedor " + CStr(Proveedor.idProveedores))
             Exit Sub
         End If
 
@@ -85,12 +85,12 @@ Public Class ProveedoresCollection
         resultado = objBaseDatos.Eliminar(Proveedor.idProveedores)
 
         If Not resultado Then
-            MessageBox.Show("No fue posible eliminar el Proveedor " + Proveedor.idProveedores)
+            MessageBox.Show("No fue posible eliminar el Proveedor " + CStr(Proveedor.idProveedores))
             Exit Sub
         End If
 
         Dim properties As PropertyDescriptorCollection = TypeDescriptor.GetProperties(Proveedor)
-        Dim myProperty As PropertyDescriptor = properties.Find("idProveedor", True)
+        Dim myProperty As PropertyDescriptor = properties.Find("idProveedores", True)
         Me.RemoveAt(Me.FindCore(myProperty, Proveedor.idProveedores))
 
     End Sub
@@ -103,7 +103,7 @@ Public Class ProveedoresCollection
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
 
-        vSQL.Append("idProveedor='" & Proveedor.idProveedores & "'")
+        vSQL.Append("idProveedores='" & Proveedor.idProveedores & "'")
         vSQL.Append(",NombreP='" & Proveedor.NombreP & "'")
         vSQL.Append(",Cantidad='" & Proveedor.Direccion & "'")
         vSQL.Append(",Precio='" & Proveedor.Telefono & "'")
@@ -114,12 +114,12 @@ Public Class ProveedoresCollection
         resultado = objBaseDatos.Actualizar(vSQL.ToString, Proveedor.idProveedores)
 
         If Not resultado Then
-            MessageBox.Show("No fue posible modificar el Proveedor " + Proveedor.idProveedores)
+            MessageBox.Show("No fue posible modificar el Proveedores " + CStr(Proveedor.idProveedores))
             Exit Sub
         End If
 
         Dim properties As PropertyDescriptorCollection = TypeDescriptor.GetProperties(Proveedor)
-        Dim myProperty As PropertyDescriptor = properties.Find("idProveedor", True)
+        Dim myProperty As PropertyDescriptor = properties.Find("idProveedores", True)
         Me.Items.Item(Me.FindCore(myProperty, Proveedor.idProveedores)) = Proveedor
 
     End Sub
