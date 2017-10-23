@@ -69,8 +69,8 @@ Public Class ProductosCollection
         vSQL.Append("(idProducto")
         vSQL.Append(",Nombre")
         vSQL.Append(",Cantidad")
-        vSQL.Append(",Precio)")
-        vSQL.Append(",Descripcion")
+        vSQL.Append(",Precio")
+        vSQL.Append(",Descripcion)")
         vSQL.Append(" VALUES ")
         vSQL.Append("('" & Producto.idProducto & "'")
         vSQL.Append("'" & Producto.Nombre & "'")
@@ -80,11 +80,7 @@ Public Class ProductosCollection
 
         Producto.idProducto = objBaseDatos.Insertar(vSQL.ToString)
 
-        If Producto.idProducto = 0 Then
-            MsgBox("No fue posible agregar el Producto " + Producto.idProducto)
-            Exit Sub
-        End If
-
+       
         Me.Add(Producto)
 
     End Sub

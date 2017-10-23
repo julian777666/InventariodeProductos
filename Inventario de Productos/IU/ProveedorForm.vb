@@ -19,7 +19,7 @@
 
         End If
 
-        Proveedor.NombreP = TextBox2.Text
+        Proveedor.Nombre = TextBox2.Text
         Proveedor.Direccion = TextBox3.Text
         Proveedor.Telefono = CInt(TextBox4.Text)
         Proveedor.Empresa = TextBox5.Text
