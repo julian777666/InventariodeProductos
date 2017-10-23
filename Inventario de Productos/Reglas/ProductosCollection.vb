@@ -50,7 +50,7 @@ Public Class ProductosCollection
             Producto.Nombre = CStr(dr("Nombre"))
             Producto.Cantidad = CStr(dr("Cantidad"))
             Producto.Precio = CStr(dr("Precio"))
-            Producto.Descripcion = CStr(dr("Descripcion"))
+            Producto.idProveedores = CStr(dr("idProveedores"))
             Me.Add(Producto)
 
         Next
@@ -66,17 +66,17 @@ Public Class ProductosCollection
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
 
-        vSQL.Append("(idProducto")
-        vSQL.Append(",Nombre")
+
+        vSQL.Append("(Nombre")
         vSQL.Append(",Cantidad")
         vSQL.Append(",Precio")
-        vSQL.Append(",Descripcion)")
+        vSQL.Append(",idProveedores)")
         vSQL.Append(" VALUES ")
-        vSQL.Append("('" & Producto.idProducto & "'")
-        vSQL.Append("'" & Producto.Nombre & "'")
+
+        vSQL.Append("('" & Producto.Nombre & "'")
         vSQL.Append("'" & Producto.Cantidad & "'")
         vSQL.Append("'" & Producto.Precio & "'")
-        vSQL.Append(",'" & Producto.Descripcion & "')")
+        vSQL.Append(",'" & Producto.idProveedores & "')")
 
         Producto.idProducto = objBaseDatos.Insertar(vSQL.ToString)
 
@@ -115,7 +115,7 @@ Public Class ProductosCollection
         vSQL.Append(",Nombre='" & Producto.Nombre & "'")
         vSQL.Append(",Cantidad='" & Producto.Cantidad & "'")
         vSQL.Append(",Precio='" & Producto.Precio & "'")
-        vSQL.Append(",Descripcion='" & Producto.Descripcion & "'")
+        vSQL.Append(",idProveedores='" & Producto.idProveedores & "'")
 
         Dim resultado As Boolean
 

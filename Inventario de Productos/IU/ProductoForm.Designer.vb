@@ -106,9 +106,9 @@ Partial Class ProductoForm
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(79, 244)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 13)
+        Me.Label5.Size = New System.Drawing.Size(56, 13)
         Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Descripcion"
+        Me.Label5.Text = "Proveedor"
         '
         'ACEPTAR
         '
@@ -131,7 +131,6 @@ Partial Class ProductoForm
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Alimento" & Global.Microsoft.VisualBasic.ChrW(9), "Bebida", "Limpieza", "Jardineria", "Mascotas", "Herramientas", "Indumentaria"})
         Me.ComboBox1.Location = New System.Drawing.Point(170, 241)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)

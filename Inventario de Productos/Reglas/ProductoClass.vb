@@ -10,6 +10,14 @@
             idProducto_ = value
         End Set
     End Property
+    Public Property idProveedores() As Integer
+        Get
+            Return idProveedores_
+        End Get
+        Set(ByVal value As Integer)
+            idProveedores_ = value
+        End Set
+    End Property
     Public Property Cantidad() As Integer
         Get
             Return Cantidad_
@@ -36,14 +44,5 @@
             Nombre_ = value
         End Set
     End Property
-    Public Property Descripcion() As String
-        Get
-            Return Descripcion_
-
-        End Get
-        Set(ByVal value As String)
-            Descripcion_ = value
-        End Set
-    End Property
-
+   
 End Class
