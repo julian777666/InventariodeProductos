@@ -38,7 +38,7 @@
         ProductoForm.TextBox2.Text = DataGridView1.CurrentRow.Cells(1).Value.ToString
         ProductoForm.TextBox3.Text = DataGridView1.CurrentRow.Cells(2).Value.ToString
         ProductoForm.TextBox4.Text = DataGridView1.CurrentRow.Cells(3).Value.ToString
-        ProductoForm.TextBox5.Text = DataGridView1.CurrentRow.Cells(4).Value.ToString
+        ProductoForm.ComboBox1.SelectedItem = DataGridView1.CurrentRow.Cells(4).Value.ToString
 
     End Sub
 

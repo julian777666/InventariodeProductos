@@ -26,7 +26,6 @@ Partial Class ProductoForm
         Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.TextBox3 = New System.Windows.Forms.TextBox
         Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.TextBox5 = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
@@ -34,6 +33,7 @@ Partial Class ProductoForm
         Me.Label5 = New System.Windows.Forms.Label
         Me.ACEPTAR = New System.Windows.Forms.Button
         Me.CANCELAR = New System.Windows.Forms.Button
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox
         Me.SuspendLayout()
         '
         'TextBox1
@@ -64,13 +64,6 @@ Partial Class ProductoForm
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 3
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(170, 237)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 4
         '
         'Label1
         '
@@ -135,11 +128,21 @@ Partial Class ProductoForm
         Me.CANCELAR.Text = "CANCELAR"
         Me.CANCELAR.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Alimento" & Global.Microsoft.VisualBasic.ChrW(9), "Bebida", "Limpieza", "Jardineria", "Mascotas", "Herramientas", "Indumentaria"})
+        Me.ComboBox1.Location = New System.Drawing.Point(170, 241)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 12
+        '
         'ProductoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(359, 368)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.CANCELAR)
         Me.Controls.Add(Me.ACEPTAR)
         Me.Controls.Add(Me.Label5)
@@ -147,7 +150,6 @@ Partial Class ProductoForm
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
@@ -162,7 +164,6 @@ Partial Class ProductoForm
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -170,5 +171,6 @@ Partial Class ProductoForm
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents ACEPTAR As System.Windows.Forms.Button
     Friend WithEvents CANCELAR As System.Windows.Forms.Button
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 
 End Class

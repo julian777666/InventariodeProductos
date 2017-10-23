@@ -23,7 +23,7 @@
         Producto.Nombre = TextBox2.Text
         Producto.Cantidad = TextBox3.Text
         Producto.Precio = TextBox4.Text
-        Producto.Descripcion = TextBox5.Text
+        Producto.Descripcion = ComboBox1.SelectedItem
 
         Select Case operacion_
 
