@@ -49,14 +49,14 @@ Partial Class ProveedorForm
         Me.TextBox2.Location = New System.Drawing.Point(179, 92)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.TextBox2.TabIndex = 0
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(179, 136)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.TextBox3.TabIndex = 1
         '
         'TextBox4
         '

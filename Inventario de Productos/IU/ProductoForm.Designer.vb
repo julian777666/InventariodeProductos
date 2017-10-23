@@ -49,21 +49,21 @@ Partial Class ProductoForm
         Me.TextBox2.Location = New System.Drawing.Point(170, 112)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.TextBox2.TabIndex = 0
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(170, 157)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.TextBox3.TabIndex = 1
         '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(170, 195)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 3
+        Me.TextBox4.TabIndex = 2
         '
         'Label1
         '
