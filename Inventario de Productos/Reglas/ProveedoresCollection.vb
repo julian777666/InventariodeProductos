@@ -32,7 +32,7 @@ Public Class ProveedoresCollection
             Proveedor = New ProveedorClass
 
             Proveedor.idProveedores = CInt(dr("idProveedores"))
-            Proveedor.NombreP = CStr(dr("NombreP"))
+            Proveedor.Nombre = CStr(dr("Nombre"))
             Proveedor.Direccion = CStr(dr("Direccion"))
             Proveedor.Telefono = CStr(dr("Telefono"))
             Proveedor.Empresa = CStr(dr("Empresa"))
@@ -53,13 +53,13 @@ Public Class ProveedoresCollection
         Dim vResultado As Boolean = False
 
         vSQL.Append("(idProveedores")
-        vSQL.Append(",NombreP")
+        vSQL.Append(",Nombre")
         vSQL.Append(",Direccion")
         vSQL.Append(",Telefono")
         vSQL.Append(",Empresa)")
         vSQL.Append(" VALUES ")
         vSQL.Append("('" & Proveedor.idProveedores & "'")
-        vSQL.Append("'" & Proveedor.NombreP & "'")
+        vSQL.Append("'" & Proveedor.Nombre & "'")
         vSQL.Append("'" & Proveedor.Direccion & "'")
         vSQL.Append("'" & Proveedor.Telefono & "'")
         vSQL.Append(",'" & Proveedor.Empresa & "')")
@@ -104,7 +104,7 @@ Public Class ProveedoresCollection
         Dim vResultado As Boolean = False
 
         vSQL.Append("idProveedores='" & Proveedor.idProveedores & "'")
-        vSQL.Append(",NombreP='" & Proveedor.NombreP & "'")
+        vSQL.Append(",Nombre='" & Proveedor.Nombre & "'")
         vSQL.Append(",Cantidad='" & Proveedor.Direccion & "'")
         vSQL.Append(",Precio='" & Proveedor.Telefono & "'")
         vSQL.Append(",Descripcion='" & Proveedor.Empresa & "'")

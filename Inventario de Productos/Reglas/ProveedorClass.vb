@@ -1,6 +1,6 @@
 ﻿Public Class ProveedorClass
     Dim idProveedores_, Telefono_ As Integer
-    Dim NombreP_, Direccion_, Empresa_ As String
+    Dim Nombre_, Direccion_, Empresa_ As String
 
     Public Property idProveedores() As Integer
         Get
@@ -18,13 +18,13 @@
             Telefono_ = value
         End Set
     End Property
-    Public Property NombreP() As String
+    Public Property Nombre() As String
         Get
-            Return NombreP_
+            Return Nombre_
 
         End Get
         Set(ByVal value As String)
-            NombreP_ = value
+            Nombre_ = value
         End Set
     End Property
     Public Property Direccion() As String
