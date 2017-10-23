@@ -62,19 +62,20 @@ Public Class ProveedoresCollection
         Dim vSQL As New StringBuilder
         Dim vResultado As Boolean = False
 
-        vSQL.Append("(idProveedores")
-        vSQL.Append(",Nombre")
+
+        vSQL.Append("(Nombre")
         vSQL.Append(",Direccion")
         vSQL.Append(",Telefono")
         vSQL.Append(",Empresa)")
         vSQL.Append(" VALUES ")
-        vSQL.Append("('" & Proveedor.idProveedores & "'")
-        vSQL.Append("'" & Proveedor.Nombre & "'")
-        vSQL.Append("'" & Proveedor.Direccion & "'")
-        vSQL.Append("'" & Proveedor.Telefono & "'")
+
+        vSQL.Append("('" & Proveedor.Nombre & "'")
+        vSQL.Append(",'" & Proveedor.Direccion & "'")
+        vSQL.Append(",'" & Proveedor.Telefono & "'")
         vSQL.Append(",'" & Proveedor.Empresa & "')")
 
         Proveedor.idProveedores = objBaseDatos.Insertar(vSQL.ToString)
+
 
         If Proveedor.idProveedores = 0 Then
             MsgBox("No fue posible agregar el Proveedor " + CStr(Proveedor.idProveedores))

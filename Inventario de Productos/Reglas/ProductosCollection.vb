@@ -74,8 +74,8 @@ Public Class ProductosCollection
         vSQL.Append(" VALUES ")
 
         vSQL.Append("('" & Producto.Nombre & "'")
-        vSQL.Append("'" & Producto.Cantidad & "'")
-        vSQL.Append("'" & Producto.Precio & "'")
+        vSQL.Append(",'" & Producto.Cantidad & "'")
+        vSQL.Append(",'" & Producto.Precio & "'")
         vSQL.Append(",'" & Producto.idProveedores & "')")
 
         Producto.idProducto = objBaseDatos.Insertar(vSQL.ToString)
