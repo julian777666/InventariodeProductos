@@ -24,20 +24,20 @@ Partial Class ProductosGrid
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
-        Me.ProductoClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton
+        Me.ProductoClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.IdProductoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.idProveedores = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.CantidadDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.PrecioDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.idProveedores = New System.Windows.Forms.DataGridViewTextBoxColumn
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProductoClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.ProductoClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -46,17 +46,13 @@ Partial Class ProductosGrid
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdProductoDataGridViewTextBoxColumn, Me.idProveedores, Me.CantidadDataGridViewTextBoxColumn, Me.PrecioDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdProductoDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.CantidadDataGridViewTextBoxColumn, Me.PrecioDataGridViewTextBoxColumn, Me.idProveedores})
         Me.DataGridView1.DataSource = Me.ProductoClassBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(12, 140)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(579, 161)
         Me.DataGridView1.TabIndex = 0
-        '
-        'ProductoClassBindingSource
-        '
-        Me.ProductoClassBindingSource.DataSource = GetType(Inventario_de_Productos.ProductoClass)
         '
         'ToolStrip1
         '
@@ -99,6 +95,10 @@ Partial Class ProductosGrid
         Me.ToolStripButton4.Size = New System.Drawing.Size(41, 64)
         Me.ToolStripButton4.Text = "SALIR"
         '
+        'ProductoClassBindingSource
+        '
+        Me.ProductoClassBindingSource.DataSource = GetType(Inventario_de_Productos.ProductoClass)
+        '
         'IdProductoDataGridViewTextBoxColumn
         '
         Me.IdProductoDataGridViewTextBoxColumn.DataPropertyName = "idProducto"
@@ -106,12 +106,12 @@ Partial Class ProductosGrid
         Me.IdProductoDataGridViewTextBoxColumn.Name = "IdProductoDataGridViewTextBoxColumn"
         Me.IdProductoDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'idProveedores
+        'NombreDataGridViewTextBoxColumn
         '
-        Me.idProveedores.DataPropertyName = "idProveedores"
-        Me.idProveedores.HeaderText = "idProveedores"
-        Me.idProveedores.Name = "idProveedores"
-        Me.idProveedores.ReadOnly = True
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
         '
         'CantidadDataGridViewTextBoxColumn
         '
@@ -127,12 +127,12 @@ Partial Class ProductosGrid
         Me.PrecioDataGridViewTextBoxColumn.Name = "PrecioDataGridViewTextBoxColumn"
         Me.PrecioDataGridViewTextBoxColumn.ReadOnly = True
         '
-        'NombreDataGridViewTextBoxColumn
+        'idProveedores
         '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        Me.idProveedores.DataPropertyName = "idProveedores"
+        Me.idProveedores.HeaderText = "idProveedores"
+        Me.idProveedores.Name = "idProveedores"
+        Me.idProveedores.ReadOnly = True
         '
         'ProductosGrid
         '
@@ -144,9 +144,9 @@ Partial Class ProductosGrid
         Me.Name = "ProductosGrid"
         Me.Text = "ProductosGrid"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProductoClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.ProductoClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -159,8 +159,8 @@ Partial Class ProductosGrid
     Friend WithEvents DescripcionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ProductoClassBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents IdProductoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents idProveedores As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CantidadDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents idProveedores As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
