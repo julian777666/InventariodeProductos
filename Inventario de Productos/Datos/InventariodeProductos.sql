@@ -1,11 +1,11 @@
-USE [Inventario de Productos]
-GO
+IF DB_ID('Inventario de Productos') IS NULL
+	CREATE DATABASE InventariodeProductos;
+ 
+GO 
 
-SET ANSI_NULLS ON
-GO
+USE [Inventario de Productos];
 
-SET QUOTED_IDENTIFIER ON
-GO
+
 IF OBJECT_ID('Productos') IS not NULL
 
 CREATE TABLE [dbo].[Productos](
