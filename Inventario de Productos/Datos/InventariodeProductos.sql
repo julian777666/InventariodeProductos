@@ -14,9 +14,9 @@ CREATE TABLE [dbo].[Productos](
 	[Cantidad] [int] NULL,
 	[Precio] [money] NULL,
 	[Descripcion] [nchar](50) NULL,
-	[idProveedores] [int] NULL,
+	[idProveedores] int FOREIGN KEY REFERENCES Proveedores(idProveedores),
  CONSTRAINT [PK_Productos] PRIMARY KEY (idProducto)
-)
+);
 
 SET ANSI_NULLS ON
 GO
@@ -34,3 +34,7 @@ CREATE TABLE [dbo].[Proveedores](
 	[Empresa] [nchar](50) NULL,
  CONSTRAINT [PK_Proveedores] PRIMARY KEY (idProveedores)
 )
+
+select * from Productos 
+
+select * from Proveedores
